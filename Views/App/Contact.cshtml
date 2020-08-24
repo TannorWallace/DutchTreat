@@ -1,0 +1,22 @@
+﻿@model ContactViewModel
+@{ 
+    ViewBag.Title = "Contact Us";
+}
+    <form method="post">
+        <label asp-for="Name">Legion Identification</label>
+        <br />
+        <input asp-for="Name" />
+        <br />
+       <label asp-for="Email"/>
+        <input asp-for="Email" />
+        <br />
+        <label asp-for="Subject">Mission Data Request:</label>
+        <br />
+        <input asp-for="Subject" placeholder="Mission specifics" />
+        <br />
+        <label asp-for="Name">Request</label>
+        <br />
+        <textarea rows="10" placeholder="Enter Mission Data Request" textarea asp-for="Message"></textarea>
+        <br />
+        <input id="buyButton" type="submit" />
+    </form>

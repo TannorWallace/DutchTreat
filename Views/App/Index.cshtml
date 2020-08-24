@@ -1,0 +1,63 @@
+﻿@{
+    ViewBag.Title = "Home Page";
+}
+
+    
+    <div class="primarchInfo">
+        <img src="~/img/Emperor_and_Sons.jpg" alt="Emp and Sons" />
+        <h3>
+            The Emperor and his Sons,
+            <br />
+            <u>The Primarchs.</u>
+        </h3>
+        <ul>
+            <li>Name: </li>
+            <li>Legion:</li>
+            <li>Story:</li>
+            <li>FlagShip:</li>
+            <li>Home World:</li>
+        </ul>
+        <button>View Profile (take to modal of Primarch/Astartes/whatevs)</button>
+    </div>
+    <div id="theForm">
+        <form>
+            <label>Legion Identification</label>
+            <br />
+            <input placeholder="Legion Call Sign" />
+            <br />
+            <input type="email" placeholder="Legion Contact" />
+            <br />
+            <label>Mission Data Request:</label>
+            <br />
+            <textarea rows="10" placeholder="Enter Mission Data Request"></textarea>
+            <br />
+            <input id="buyButton" type="submit" name="name" value="Send Request" />
+
+        </form>
+
+    </div>
+
+    <div id="loginToggle">Legion Id:</div>
+    <form class="popup-form">
+        <div>
+            <input placeholder="Legion Identification" />
+            <br />
+        </div>
+        <div>
+            <label>Pass Code:</label>
+            <br />
+            <input type="password" placeholder="Auth Code" />
+        </div>
+        
+            </form>
+
+            <label>Authorization Override</label>
+            <input type="checkbox" />
+        </div>
+        <div>
+            <input type="submit" value="Login" />
+        </div>
+    <
+
+    <script src="~/node_modules/jquery/dist/jquery.min.js"></script>
+    <script src="~/js/index.js"></script>

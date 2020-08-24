@@ -1,0 +1,30 @@
+﻿
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Dutch Treat: @ViewBag.Title</title>
+
+    <link href="/css/site.css" rel="stylesheet" />
+</head>
+<body>
+    <header>
+        <h1>Welcome to 40k</h1>
+        <menu>
+            <ul>
+                <li><a asp-controller="App" asp-action="Index">Home</a></li>
+                <li><a asp-controller="App" asp-action="Contact">Contact</a></li>
+                <li><a asp-controller="App" asp-action="About">About</a></li>
+            </ul>
+        </menu>
+    </header>
+    <section>
+    <h1><u>@ViewBag.Title</u></h1>
+        @RenderBody()
+    </section>
+    <footer>Copyright 2019 GamesWorkShop </footer>
+
+
+    <script src="/node_modules/jquery/dist/jquery.min.js"></script>
+    <script src="/js/index.js"></script>
+</body>
+</html>
